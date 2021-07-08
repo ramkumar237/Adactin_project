@@ -34,9 +34,9 @@ public class AdactinRunner {
 	public static void launchBrowser() throws Throwable {
 		
 		
-		String browser = FileReaderManager.getInstanceFRM().getInstanceCR().getBrowser();
+		String browse = FileReaderManager.getInstanceFRM().getInstanceCR().getBrowser();
 		
-		driver = Base_Class.browserLaunch(browser);
+		driver = Base_Class.browserLaunch(browse);
 		Base_Class.wait("implicit", 10, TimeUnit.SECONDS, null);
 		
 	}
